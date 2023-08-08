@@ -76,6 +76,7 @@ class _CategoriesState extends State<Categories> {
               padding: const EdgeInsets.only(
                 top: 50,
                 left: 10,
+                right: 40,
               ),
               child: CustomTextField(
                 onChange: (value) => updateList(value),
@@ -145,8 +146,8 @@ class _CategoriesState extends State<Categories> {
                                 ),
                               ),
                               ClipRRect(
-                                borderRadius: BorderRadius.circular(20),
-                                child: ElevatedButton(
+                                borderRadius: BorderRadius.circular(10),
+                                child: OutlinedButton(
                                   onPressed: () {
                                     Navigator.pushAndRemoveUntil(
                                         context,
@@ -156,10 +157,12 @@ class _CategoriesState extends State<Categories> {
                                         ),
                                         (route) => false);
                                   },
-                                  style: ElevatedButton.styleFrom(
-                                      primary: Colors.redAccent.shade200),
+                                  style: OutlinedButton.styleFrom(
+                                      primary: Colors.red,
+                                      side:
+                                          const BorderSide(color: Colors.red)),
                                   child: const Text(
-                                    "Sure",
+                                    "Ok",
                                     style: TextStyle(
                                         fontSize: 18,
                                         fontWeight: FontWeight.bold,
