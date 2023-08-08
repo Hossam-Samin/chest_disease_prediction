@@ -70,11 +70,11 @@ class _SignupState extends State<Signup> {
                       children: [
                         Padding(
                           padding: const EdgeInsets.only(
-                              top: 50, left: 20, right: 20),
+                              top: 50, left: 40, right: 40),
                           child: CustomTextField(
                             onChange: (value) {},
                             controller: userNameController,
-                            hintText: "Enter UserName",
+                            hintText: "UserName",
                             prefixIcon: const Icon(Icons.person),
                             validation: (value) {
                               if (value!.isEmpty) {
@@ -87,11 +87,11 @@ class _SignupState extends State<Signup> {
                         ),
                         const SizedBox(height: 20),
                         Padding(
-                          padding: const EdgeInsets.only(left: 20, right: 20),
+                          padding: const EdgeInsets.only(left: 40, right: 40),
                           child: CustomTextField(
                             onChange: (value) {},
                             controller: userEmailIdController,
-                            hintText: "Enter E-Mail",
+                            hintText: "Email",
                             prefixIcon: const Icon(Icons.email),
                             validation: (value) {
                               if (value!.isEmpty) {
@@ -106,11 +106,11 @@ class _SignupState extends State<Signup> {
                         ),
                         const SizedBox(height: 20),
                         Padding(
-                          padding: const EdgeInsets.only(left: 20, right: 20),
+                          padding: const EdgeInsets.only(left: 40, right: 40),
                           child: CustomTextField(
                             onChange: (value) {},
                             controller: passwordController,
-                            hintText: "Enter Password",
+                            hintText: "Password",
                             prefixIcon: const Icon(Icons.lock),
                             isObscureText: true,
                             validation: (value) {
@@ -122,11 +122,11 @@ class _SignupState extends State<Signup> {
                         ),
                         const SizedBox(height: 20),
                         Padding(
-                          padding: const EdgeInsets.only(left: 20, right: 20),
+                          padding: const EdgeInsets.only(left: 40, right: 40),
                           child: CustomTextField(
                             onChange: (value) {},
                             controller: confirmPasswordController,
-                            hintText: "Enter confirm Password",
+                            hintText: "Confirm Password",
                             prefixIcon: const Icon(Icons.lock),
                             isObscureText: true,
                             validation: (value) {
@@ -138,11 +138,11 @@ class _SignupState extends State<Signup> {
                         ),
                         const SizedBox(height: 20),
                         Padding(
-                          padding: const EdgeInsets.only(left: 20, right: 20),
+                          padding: const EdgeInsets.only(left: 40, right: 40),
                           child: CustomTextField(
                             onChange: (value) {},
                             controller: phoneNumberController,
-                            hintText: "Enter Phone Number",
+                            hintText: "Phone Number",
                             prefixIcon: const Icon(Icons.phone),
                             keyboardType: TextInputType.number,
                             validation: (value) {
@@ -156,7 +156,7 @@ class _SignupState extends State<Signup> {
                         ),
                         const SizedBox(height: 20),
                         Padding(
-                          padding: const EdgeInsets.only(left: 20, right: 20),
+                          padding: const EdgeInsets.only(left: 40, right: 40),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [

@@ -45,10 +45,10 @@ class _CustomTextFieldState extends State<CustomTextField> {
           focusedBorder: buildBorder(color: Colors.amber),
           prefixIcon: widget.prefixIcon,
           suffixIcon: widget.suffixIcon,
-          fillColor: Colors.grey.shade100,
+          fillColor: Colors.grey.shade400,
           filled: true,
           contentPadding: const EdgeInsets.symmetric(horizontal: 16),
-          border: OutlineInputBorder(borderRadius: BorderRadius.circular(16))),
+          border: OutlineInputBorder(borderRadius: BorderRadius.circular(10))),
     );
   }
 }

@@ -74,12 +74,12 @@ class _LoginState extends State<Login> {
                       ),
                       const SizedBox(height: 50),
                       Padding(
-                        padding: const EdgeInsets.only(left: 20, right: 20),
+                        padding: const EdgeInsets.only(left: 40, right: 40),
                         child: CustomTextField(
                           onChange: (value) {},
                           controller: emailController,
                           prefixIcon: const Icon(Icons.email),
-                          hintText: "Enter E-Mail",
+                          hintText: "Email",
                           validation: (value) {
                             if (value!.isEmpty) {
                               return "Please Enter Your E-Mail";
@@ -95,12 +95,12 @@ class _LoginState extends State<Login> {
                         height: 20,
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(left: 20, right: 20),
+                        padding: const EdgeInsets.only(left: 40, right: 40),
                         child: CustomTextField(
                           onChange: (value) {},
                           controller: passwordController,
                           prefixIcon: const Icon(Icons.lock),
-                          hintText: "Enter Password",
+                          hintText: "Password",
                           isObscureText: true,
                           validation: (value) {
                             if (value!.isEmpty) {
