@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "934473198710",
+    "project_id": "chest-disease-18594",
+    "storage_bucket": "chest-disease-18594.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934473198710:android:b8fe55a8c7050619c2c357",
+        "android_client_info": {
+          "package_name": "com.chest_disease_prediction"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "934473198710-93hltqknpjd45f8p9c72l2gbvrirhov4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX9Q9AUZPUPvRZLiniZN9oLlNUYRnM860"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "934473198710-93hltqknpjd45f8p9c72l2gbvrirhov4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "934473198710-2oudvjae53s4dpdlb58hl7hm7k787ftj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.graduationProjectToothDoctor"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
