@@ -10,9 +10,9 @@ class AppAssets {
   static const String onBoardingChest5 = "assets/images/visit.png";
 
   // Asstet Categories Screen
-  static const String docTeeth = "assets/images/dentist3.jpg";
-  static const String tooth = "assets/images/tooth.jpg";
-  static const String advice = "assets/images/advice.jpg";
+  static const String info = "assets/images/info.png";
+  static const String adviceBottomSheet =
+      "assets/images/advice-bottomSheet.png";
   static const String hossam = "assets/images/image1.jpg";
   static const String moheb = "assets/images/image2.jpeg";
   static const String andrew = "assets/images/image3.jpeg";
@@ -24,17 +24,6 @@ class AppAssets {
 
   // Login Screen
   static const String chestLogin = "assets/images/chest-pain-or-pressure.png";
-
-  // information
-  static const String info = "assets/images/info.png";
-
-  // Advice Bottom Sheet
-  static const String adviceBottomSheet =
-      "assets/images/advice-bottomSheet.png";
-
-  // Information Bottom Sheet
-  static const String informationBottomSheet =
-      "assets/images/information-bootomSheet.png";
 
   // Logout show dialog
   static const String logout = "assets/images/logout.png";

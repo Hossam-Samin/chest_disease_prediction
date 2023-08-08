@@ -1,6 +1,6 @@
-# graduation_project_tooth_doctor
+# chest_disease_prediction
 
-A new Flutter project.
+This app to predict chest disease.
 
 ## Getting Started
 
