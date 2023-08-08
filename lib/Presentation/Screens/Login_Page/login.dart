@@ -42,6 +42,9 @@ class _LoginState extends State<Login> {
     }, builder: (context, state) {
       LoginCubit loginCubit = LoginCubit.get(context);
       return Scaffold(
+        appBar: AppBar(
+          elevation: 0,
+        ),
         body: Form(
           key: loginKey,
           child: SingleChildScrollView(
@@ -62,7 +65,7 @@ class _LoginState extends State<Login> {
                   child: Column(
                     children: [
                       const Padding(
-                        padding: EdgeInsets.only(top: 100),
+                        padding: EdgeInsets.only(top: 80),
                         child: CircleAvatar(
                           backgroundColor: Colors.grey,
                           maxRadius: 100,

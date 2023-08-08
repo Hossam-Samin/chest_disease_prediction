@@ -47,11 +47,6 @@ class _SignupState extends State<Signup> {
       return Scaffold(
         appBar: AppBar(
           elevation: 0,
-          centerTitle: true,
-          title: const Text(
-            "Signup",
-            style: TextStyle(fontSize: 20),
-          ),
         ),
         body: Form(
           key: registerKey,
@@ -273,12 +268,12 @@ class _SignupState extends State<Signup> {
                         ),
                         OutlinedButton(
                             onPressed: () {
-                              Navigator.pushAndRemoveUntil(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => const Login(),
-                                  ),
-                                  (route) => false);
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const Login(),
+                                ),
+                              );
                             },
                             style: OutlinedButton.styleFrom(
                               padding: const EdgeInsets.only(
