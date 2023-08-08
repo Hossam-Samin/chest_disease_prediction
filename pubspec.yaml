@@ -78,21 +78,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/tflite_model/label_brain_tumor.txt
-    - assets/tflite_model/model_brain_tumour.tflite
     - assets/tflite_model/label_chest.txt
     - assets/tflite_model/model.tflite
-
-    - assets/images/dental_image.jpg
-    - assets/images/dentist2.jpg
-    - assets/images/man.svg
-    - assets/images/dentist3.jpg
-    - assets/images/image1.jpg
-    - assets/images/image2.jpeg
-    - assets/images/image3.jpeg
-    - assets/images/tooth.jpg
-    - assets/images/advice.jpg
-
     - assets/images/
 
 
