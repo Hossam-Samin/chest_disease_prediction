@@ -17,7 +17,7 @@ flutterToast({required String msg, required Color color}) {
 // This function use when change in border
 OutlineInputBorder buildBorder({color}) {
   return OutlineInputBorder(
-    borderSide: const BorderSide(color: Colors.amber),
+    borderSide: const BorderSide(color: Colors.cyanAccent),
     borderRadius: BorderRadius.circular(16),
   );
 }

@@ -14,6 +14,7 @@ class CustomTextField extends StatefulWidget {
     this.keyboardType,
     this.suffixIcon,
     required this.onChange,
+    this.onSaved,
   }) : super(key: key);
   final String hintText;
   String? hintStyle;
@@ -24,6 +25,7 @@ class CustomTextField extends StatefulWidget {
   IconButton? suffixIcon;
   TextInputType? keyboardType;
   Function onChange;
+  Function? onSaved;
 
   @override
   State<CustomTextField> createState() => _CustomTextFieldState();
@@ -36,16 +38,17 @@ class _CustomTextFieldState extends State<CustomTextField> {
       controller: widget.controller,
       obscureText: widget.isObscureText,
       validator: (value) => widget.validation!(value),
+      onSaved: (value) => widget.onSaved!(value),
       onChanged: (value) => widget.onChange(value),
       keyboardType: widget.keyboardType,
       decoration: InputDecoration(
           alignLabelWithHint: true,
           hintText: widget.hintText,
           hintStyle: const TextStyle(fontFamily: "JF-Flat"),
-          focusedBorder: buildBorder(color: Colors.amber),
+          focusedBorder: buildBorder(color: Colors.cyanAccent),
           prefixIcon: widget.prefixIcon,
           suffixIcon: widget.suffixIcon,
-          fillColor: Colors.grey.shade400,
+          fillColor: Colors.white.withOpacity(0.3),
           filled: true,
           contentPadding: const EdgeInsets.symmetric(horizontal: 16),
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(16))),
