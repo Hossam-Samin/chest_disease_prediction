@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:chest_disease_prediction/Presentation/Screens/Home_Page/home.dart';
 import 'package:chest_disease_prediction/Presentation/Screens/Prediction/chest_prediction.dart';
 import 'package:chest_disease_prediction/constants/app_assets.dart';
-import '../../../business_logic/detection_model/detection_cubit.dart';
-import '../../../data/Models/Doctor_List_Model/doctor_list_model.dart';
+import '../../../business_logic/detection_model/prediction_cubit.dart';
+import '../../../data/Models/doctors_model/doctors_model.dart';
 import '../../widgets/custom_Card.dart';
 import '../../widgets/custom_textField.dart';
 import 'Advice/advice.dart';
@@ -20,7 +19,6 @@ class Categories extends StatefulWidget {
 }
 
 final TextEditingController searchController = TextEditingController();
-int? length;
 
 class _CategoriesState extends State<Categories> {
   static List<DoctorModel> doctorList = [
@@ -87,9 +85,7 @@ class _CategoriesState extends State<Categories> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(
-              top: 50,
-            ),
+            padding: const EdgeInsets.only(top: 50),
             child: Container(
               margin: const EdgeInsets.all(10),
               decoration: BoxDecoration(
@@ -196,9 +192,7 @@ class _CategoriesState extends State<Categories> {
           style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
         ),
       ),
-      const SizedBox(
-        height: 20,
-      ),
+      const SizedBox(height: 20),
       const Divider(
           color: Colors.blueGrey, thickness: 1, indent: 20, endIndent: 20),
       Card(

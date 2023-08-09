@@ -1,10 +1,9 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:chest_disease_prediction/Presentation/Screens/Prediction/result_of_prediction.dart';
-import 'package:chest_disease_prediction/business_logic/detection_model/detection_state.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:chest_disease_prediction/business_logic/detection_model/prediction_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../business_logic/detection_model/detection_cubit.dart';
+import '../../../business_logic/detection_model/prediction_cubit.dart';
 
 class ChestPrediction extends StatelessWidget {
   ChestPrediction({
@@ -80,7 +79,7 @@ class ChestPrediction extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(16)),
                               child: const Center(
                                   child: Text(
-                                "Select Chest x ray from: ",
+                                "Select Chest X-ray from: ",
                                 style: TextStyle(
                                     fontSize: 20,
                                     fontWeight: FontWeight.normal,

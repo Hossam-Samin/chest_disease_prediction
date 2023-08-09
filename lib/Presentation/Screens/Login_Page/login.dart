@@ -22,7 +22,7 @@ bool isLoading = false;
 AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
 String? userEmail, password;
 
-void checkEmailUser() {
+void checkUserEmail() {
   Categories(emailController.text);
   print("Email: ${emailController.text}");
 }
@@ -33,7 +33,7 @@ class _LoginState extends State<Login> {
     return BlocConsumer<LoginCubit, LoginState>(listener: (context, state) {
       if (state is LoginSuccessState) {
         flutterToast(msg: 'Login Successfully', color: Colors.green);
-        checkEmailUser();
+        checkUserEmail();
         Navigator.pushAndRemoveUntil(
             context,
             MaterialPageRoute(

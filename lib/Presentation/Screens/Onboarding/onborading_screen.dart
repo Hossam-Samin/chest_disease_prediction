@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:chest_disease_prediction/business_logic/onBoarding/onBoarding_cubit.dart';
-import 'package:chest_disease_prediction/business_logic/onBoarding/onBoarding_state.dart';
-
-import '../../../constants/static_statement_for_onBoarding.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:chest_disease_prediction/business_logic/onBoarding/onboarding_cubit.dart';
+import 'package:chest_disease_prediction/business_logic/onBoarding/onboarding_state.dart';
+import '../../../constants/static_list_onboarding.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../Home_Page/home.dart';

@@ -1,6 +1,5 @@
 import 'package:chest_disease_prediction/constants/app_assets.dart';
-
-import '../data/onBoarding_model/onBoarding_model.dart';
+import '../data/onboarding_model/onboarding_model.dart';
 
 // This statement form type list about on Boarding screen in app
 List<OnBoardingModel> onBoardingModelList = [

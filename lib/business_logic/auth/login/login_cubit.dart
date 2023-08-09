@@ -1,9 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:meta/meta.dart';
 
 import '../../../constants/end_points.dart';
 import '../../../data/Models/auth/login_model.dart';
@@ -15,18 +12,7 @@ class LoginCubit extends Cubit<LoginState> {
 
   static LoginCubit get(context) => BlocProvider.of(context);
 
-  bool visiblePassword = false;
-
-  void changePasswordVisibility() {
-    visiblePassword = !visiblePassword;
-    emit(PasswordVisibilityState());
-  }
-
-  void postLogin({
-    required String email,
-    required String password,
-    context,
-  }) {
+  void postLogin({required String email, required String password, context}) {
     emit(LoginLoadingState());
     DioHelper.postData(url: loginEndPoint, data: {
       'email': email,

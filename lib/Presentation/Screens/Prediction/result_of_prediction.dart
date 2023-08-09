@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../business_logic/detection_model/detection_cubit.dart';
+import '../../../business_logic/detection_model/prediction_cubit.dart';
 
 class ResultOfPrediction extends StatelessWidget {
   ResultOfPrediction({Key? key, required this.cubit}) : super(key: key);

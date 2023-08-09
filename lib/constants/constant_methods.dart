@@ -22,7 +22,7 @@ OutlineInputBorder buildBorder({color}) {
   );
 }
 
-// This function or method to display me message in app
+// This function or method to display me message in app when register and login
 void showSnackBar(BuildContext context, String messageSnackBar) {
   ScaffoldMessenger.of(context)
       .showSnackBar(SnackBar(content: Text(messageSnackBar)));

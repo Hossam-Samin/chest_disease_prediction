@@ -21,7 +21,6 @@ final TextEditingController passwordController = TextEditingController();
 final TextEditingController confirmPasswordController = TextEditingController();
 final TextEditingController phoneNumberController = TextEditingController();
 final GlobalKey<FormState> registerKey = GlobalKey<FormState>();
-var genderSelected = "Select gender";
 bool isLoading = false;
 AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
 String? userName, userEmail, password, confirmPassword, phoneNumber;
@@ -269,7 +268,7 @@ class _SignupState extends State<Signup> {
                                   flutterToast(
                                       msg:
                                           'The Network is off or email is already',
-                                      color: Colors.green);
+                                      color: Colors.red);
                                 }
                               } else {
                                 autovalidateMode = AutovalidateMode.always;
@@ -288,26 +287,6 @@ class _SignupState extends State<Signup> {
                               ),
                             ),
                           ),
-                    // Row(
-                    //   children: const [
-                    //     Divider(
-                    //       color: Colors.white,
-                    //       thickness: 2,
-                    //       indent: 20,
-                    //       endIndent: 250,
-                    //     ),
-                    //     Text(
-                    //       "or",
-                    //       style: TextStyle(color: Colors.white),
-                    //     ),
-                    //     Divider(
-                    //       color: Colors.white,
-                    //       thickness: 2,
-                    //       indent: 250,
-                    //       endIndent: 20,
-                    //     ),
-                    //   ],
-                    // ),
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 10),
                       child: Row(

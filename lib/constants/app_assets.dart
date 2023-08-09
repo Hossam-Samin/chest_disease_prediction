@@ -1,6 +1,4 @@
 class AppAssets {
-  // App SVG Images
-
   // On Boarding screen
   static const String onBoardingChest1 =
       "assets/images/chest-pain-or-pressure.png";

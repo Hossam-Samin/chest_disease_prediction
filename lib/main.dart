@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:chest_disease_prediction/business_logic/auth/login/login_cubit.dart';
 import 'package:chest_disease_prediction/business_logic/auth/register/register_cubit.dart';
-import 'package:chest_disease_prediction/business_logic/detection_model/detection_cubit.dart';
-import 'package:chest_disease_prediction/business_logic/onBoarding/onBoarding_cubit.dart';
+import 'package:chest_disease_prediction/business_logic/detection_model/prediction_cubit.dart';
+import 'package:chest_disease_prediction/business_logic/onBoarding/onboarding_cubit.dart';
 import 'Presentation/Screens/Onboarding/onborading_screen.dart';
-import 'business_logic/detection_model/detiction_observer.dart';
+import 'business_logic/detection_model/prediction_observer.dart';
 import 'data/data_provider/local/cache_helper.dart';
 import 'data/data_provider/remote/dio_helper.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

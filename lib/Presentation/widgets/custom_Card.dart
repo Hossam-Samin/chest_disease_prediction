@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../constants/app_assets.dart';
-
 class CustomCard extends StatefulWidget {
   CustomCard({
     Key? key,

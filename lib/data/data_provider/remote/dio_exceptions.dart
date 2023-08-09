@@ -34,7 +34,7 @@ class DioExceptions implements Exception {
     }
   }
 
-  String _handleError(int? statusCode, dynamic error) {
+  String handleError(int? statusCode, dynamic error) {
     switch (statusCode) {
       case 400:
         return error['message'];

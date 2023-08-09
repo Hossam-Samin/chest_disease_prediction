@@ -1,10 +1,8 @@
 import 'dart:io';
-import 'dart:typed_data';
 import 'package:image_picker/image_picker.dart';
 import 'package:tflite/tflite.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import 'detection_state.dart';
+import 'prediction_state.dart';
 
 class AppCubit extends Cubit<AppState> {
   AppCubit() : super(IntiAppState());
